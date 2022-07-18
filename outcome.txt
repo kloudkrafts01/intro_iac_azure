@@ -1,0 +1,51 @@
+[0m[1mazurerm_resource_group.rg: Creating...[0m[0m
+[0m[1mazurerm_resource_group.rg: Creation complete after 0s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources][0m
+[0m[1mazurerm_public_ip.pip: Creating...[0m[0m
+[0m[1mazurerm_nat_gateway.natgw: Creating...[0m[0m
+[0m[1mazurerm_virtual_network.vnet: Creating...[0m[0m
+[0m[1mazurerm_public_ip.pip: Creation complete after 2s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/publicIPAddresses/efrei-course-public-ip][0m
+[0m[1mazurerm_virtual_network.vnet: Creation complete after 3s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/virtualNetworks/efrei-course-network][0m
+[0m[1mazurerm_subnet.subnet: Creating...[0m[0m
+[0m[1mazurerm_subnet.subnet: Creation complete after 4s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/virtualNetworks/efrei-course-network/subnets/efrei-course-subnet][0m
+[0m[1mazurerm_network_interface.nic: Creating...[0m[0m
+[0m[1mazurerm_network_interface.nic: Creation complete after 0s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/networkInterfaces/efrei-course-nic][0m
+[0m[1mazurerm_virtual_machine.main: Creating...[0m[0m
+[0m[1mazurerm_nat_gateway.natgw: Still creating... [10s elapsed][0m[0m
+[0m[1mazurerm_nat_gateway.natgw: Creation complete after 10s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/natGateways/efrei-course-natgw][0m
+[0m[1mazurerm_subnet_nat_gateway_association.natgwsubnet: Creating...[0m[0m
+[0m[1mazurerm_nat_gateway_public_ip_association.natgwip: Creating...[0m[0m
+[0m[1mazurerm_virtual_machine.main: Still creating... [10s elapsed][0m[0m
+[0m[1mazurerm_subnet_nat_gateway_association.natgwsubnet: Still creating... [10s elapsed][0m[0m
+[0m[1mazurerm_nat_gateway_public_ip_association.natgwip: Still creating... [10s elapsed][0m[0m
+[0m[1mazurerm_nat_gateway_public_ip_association.natgwip: Creation complete after 11s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/natGateways/efrei-course-natgw|/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/publicIPAddresses/efrei-course-public-ip][0m
+[0m[1mazurerm_subnet_nat_gateway_association.natgwsubnet: Creation complete after 14s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/virtualNetworks/efrei-course-network/subnets/efrei-course-subnet][0m
+[0m[1mazurerm_virtual_machine.main: Still creating... [20s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.main: Still creating... [30s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.main: Still creating... [40s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.main: Creation complete after 47s [id=/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Compute/virtualMachines/efrei-course-vm][0m
+[0m[1m[32m
+Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
+[0m[0m[1m[32m
+Outputs:
+
+[0mpublic-ip = {
+  "allocation_method" = "Static"
+  "domain_name_label" = tostring(null)
+  "edge_zone" = ""
+  "fqdn" = tostring(null)
+  "id" = "/subscriptions/0e63ccb5-39f3-45ea-969c-293888a20c07/resourceGroups/efrei-course-resources/providers/Microsoft.Network/publicIPAddresses/efrei-course-public-ip"
+  "idle_timeout_in_minutes" = 4
+  "ip_address" = "20.216.130.40"
+  "ip_tags" = tomap(null) /* of string */
+  "ip_version" = "IPv4"
+  "location" = "francecentral"
+  "name" = "efrei-course-public-ip"
+  "public_ip_prefix_id" = tostring(null)
+  "resource_group_name" = "efrei-course-resources"
+  "reverse_fqdn" = tostring(null)
+  "sku" = "Standard"
+  "sku_tier" = "Regional"
+  "tags" = tomap(null) /* of string */
+  "timeouts" = null /* object */
+  "zones" = toset(null) /* of string */
+}
