@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "rg" {
-  name     = "${var.prefix}-resources"
-  location = "France Central"
-}
-
 resource "azurerm_virtual_network" "vnet" {
   name                = "${var.prefix}-network"
   address_space       = ["10.0.0.0/16"]

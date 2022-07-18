@@ -32,3 +32,20 @@ resource "azurerm_virtual_machine" "main" {
     environment = "staging"
   }
 }
+
+# resource "azurerm_service_plan" "appsvc" {
+#   name                = "${var.prefix}-appsvc"
+#   resource_group_name = azurerm_resource_group.rg.name
+#   location            = azurerm_resource_group.rg.location
+#   os_type             = "Linux"
+#   sku_name            = "P1v2"
+# }
+
+# resource "azurerm_linux_web_app" "webapp" {
+#   name                = "${var.prefix}-webapp"
+#   resource_group_name = azurerm_resource_group.rg.name
+#   location            = azurerm_service_plan.appsvc.location
+#   service_plan_id     = azurerm_service_plan.appsvc.id
+
+#   site_config {}
+# }
